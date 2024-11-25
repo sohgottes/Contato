@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.message h1 {
+    font-size: 3em;
+    color: #cc0000; /* Vermelho mais fosco */
+    animation: blink 1.5s infinite alternate;
+    margin-bottom: 50px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media .icon {
+    margin: 0 25px; /* Aumentado o espaçamento */
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.social-media .icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #cc0000;
+}
+
+.social-media .icon:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px #cc0000;
+}
+
+.social-media .icon-label {
+    display: block;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.facebook-label {
+    color: #3b5998; /* Cor do Facebook */
+}
+
+.instagram-label {
+    color: #e4405f; /* Cor do Instagram */
+}
+
+.website-label {
+    color: #2c3e50; /* Cor do Website */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
